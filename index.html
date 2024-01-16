@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritesh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar" id="top">
+    <div class="left">Ritesh Portfolio</div>
+    <div class="right">
+      <ul class="navul">
+        <li class="navitem"><a href="#home">Home</a></li>
+        <li class="navitem"><a href="#project">Projects</a></li>
+        <li class="navitem"><a href="#resume">Resume</a></li>
+        <li class="navitem"><a href="#contact">Contacts</a></li>
+        <li class="navitem"><a href="#">About me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="midcontent">
+    <div class="midright">
+      <img src="img/WhatsApp Image 2020-09-10 at 8.51.11 AM.jpeg" alt="">
+    </div>
+    <div class="midleft">
+      <div class="intro">
+      <p class="intropara" id="introp">Hello , My Name is <spam class="purple">Ritesh Dafale </spam> </p>
+       
+        <p class="intropara">I'm Passionate <span id="element"></span></p>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Programmer</i>.', ' Java Developer.', 'Web Developer.'],
+          typeSpeed: 50,
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="projects" id="project">
+    <div class="project-list">
+      <h1>Projects</h1>
+      <div class="clinic-management">
+        <div class="right">
+          <h2 class="first-head">CLINIC MANAGEMENT SYSTEM</h2>
+          <p class="clinic-para">During my academic journey, I initiated my first project, a Clinic Management System.
+            This
+            project is
+            grounded in Core Java, with the database management aspect being handled through MySQL Workbench.
+            Through
+            this endeavor, I honed my skills in Java programming and database management, gaining valuable
+            experience
+            in the development of practical applications for real-world scenarios.</p>
+          <input class="rightbtn" type="button" value="Read More"
+            onclick="window.location='moreClinicManagement.html';">
+        </div>
+
+        <div class="left">
+          <img src="img/Cinic-Home-page.jpg" alt="">
+        </div>
+      </div>
+      <div class="amazon-clone">
+        <div class="clone-right">
+          <h2 class="first-head2">AMAZON-CLONE</h2>
+          <P class="amazon-para">
+            In the process of mastering HTML, CSS, and JavaScript, I crafted an Amazon clone. This hands-on project
+            served as a valuable exercise, providing practical experience in frontend development and allowing me to
+            hone my skills in building interactive and visually appealing web interfaces</P>
+          <input class="amazon-rightbtn" type="button" value="Read More"
+            onclick="window.location='moreAmazonClone.html'">
+        </div>
+        <div class="clone-left">
+          <img src="img/Amazon-clone.png" alt="Some isssue with Image...">
+        </div>
+      </div>
+
+      <div class="snakegame">
+        <div class="left">
+          <h2 class="snake-head">SNAKE GAME</h2>
+          <P class="snake-para">During my Java programming for fun, I attempted to create a Snake game using Swing and
+            AWT. In
+            this game, the snake is controlled by buttons for moving left, right, up, and down. Additionally, whenever
+            the snake consumes an enemy, the score increases.</P>
+          <input class="snake-rightbtn" type="button" value="Read More" onclick="window.location='moreSnakeGame.html'">
+        </div>
+        <div class="right">
+          <img src="img/Snake-game.png" alt="Some Issue with iMAGE ...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project section finish -->
+
+  <div class="resume" id="resume">
+    <h1 class="resume-h1">Resume</h1>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        As an MCA student passionate about programming, I am eager to launch my career as a Java and Web Developer. With
+        a strong foundation in computer science, I am actively refining my skills in Java, Hibernate, Spring Boot, and
+        Angular. I am a quick learner, enthusiastic about the latest industry trends, and
+        committed to contributing to dynamic projects.
+      </p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>Cpp</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>J2EE</li>
+        <li>Servlets</li>
+        <li>JSP</li>
+        <li>Oracle</li>
+        <li>Java Developer</li>
+        <li>Web Developer</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>Bachelor of Computer Science</strong><br>
+        Shri Shivaji Education Society Amravati's<br>
+        Graduated: July 2022
+      </p>
+      <p>
+        <strong>Master of Computer Applicatione</strong><br>
+        Prof. Ram Meghe Institute of Technology and Research
+        Badnera - Amravati 444701(MS)<br>
+        Graduated: Persuring
+      </p>
+    </section>
+  </div>
+
+  <div class="contacts" id="contact">
+    <h2 class="contact-h2">Contact Form</h2>
+    <p>Thank you for considering reaching out. Your interest means a lot, and I'm eager to engage in meaningful
+      conversations.</p>
+    <form action="#" method="post" class="contact-form">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" class="first-name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="thoughts">Your Thoughts:</label>
+      <textarea id="thoughts" name="thoughts" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="aboutus">
+    <div class="left">
+      <h2 class="about-head">About us</h2>
+      <img src="img/About-img.jpg" alt="Something wroung with image ...">
+
+      Image by <a
+        href="https://www.freepik.com/free-photo/programming-background-collage_34089161.htm#query=web%20programming&position=18&from_view=keyword&track=ais&uuid=ea12f10f-3a18-438d-bcfc-beffac07d16d">Freepik</a>
+    </div>
+    <div class="right">
+      <p>Hello, I'm Ritesh Dafale, currently pursuing my post-graduation in MCA with a focus on programming. In my
+        portfolio, I showcase the projects I've built so far. Feel free to explore and reach out—I'm actively seeking
+        opportunities as a Java Developer or Web Developer.<br><br>
+        Feel free to adjust it further based on your personal style and preferences.</p>
+    </div>
+  </div>
+  <div class="top">
+    <a href="#top">top</a>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="contact-info">
+        <p>Email: your.email@example.com</p>
+      </div>
+      <div class="navigation-links">
+        <a href="#top">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#project">Projects</a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Ritesh Dafale</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
